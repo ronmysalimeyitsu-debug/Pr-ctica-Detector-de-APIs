@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detector de APIs de Almacenamiento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h1>Detector de APIs de Persistencia</h1>
+    <p>Este sistema evalúa la disponibilidad de las herramientas nativas de almacenamiento en el objeto global <code>window</code> de tu navegador actual.</p>
+
+    <div class="hint-box">
+      <p><strong>Nota de Privacidad:</strong> Si navegas en modo incógnito, el acceso a sistemas complejos como <code>indexedDB</code> o la persistencia de <code>localStorage</code> podría estar restringido por el navegador.</p>
+    </div>
+
+    <div class="api-list">
+      <span class="api-tag">localStorage</span>
+      <span class="api-tag">sessionStorage</span>
+      <span class="api-tag">indexedDB</span>
+      <span class="api-tag">cookieStore</span>
+    </div>
+
+    <div class="results-box">
+      <div id="placeholder" class="placeholder">Evaluando compatibilidad del sistema...</div>
+      <div id="results-grid" class="results-grid" style="display: none;">
+        </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
