@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab: API Detector (Run Button)</title>
+  <link rel="stylesheet" href="lab_styles.css">
+</head>
+<body>
+  <main>
+    <h1>Detector de APIs del Navegador</h1>
+    <p>Usa IA para generar código que detecte las APIs disponibles, luego pégalo en el editor.</p>
+
+    <div class="hint-box">
+      <strong>💡 Pista:</strong> Usa <code>typeof window.NombreAPI !== 'undefined'</code> para detectar cada API.
+    </div>
+
+    <div class="api-list">
+      <span class="api-tag">geolocation</span>
+      <span class="api-tag">localStorage</span>
+      <span class="api-tag">sessionStorage</span>
+      <span class="api-tag">indexedDB</span>
+      <span class="api-tag">serviceWorker</span>
+      <span class="api-tag">webkitRTCPeerConnection</span>
+      <span class="api-tag">WebGLRenderingContext</span>
+      <span class="api-tag">speechRecognition</span>
+      <span class="api-tag">Notification</span>
+      <span class="api-tag">bluetooth</span>
+    </div>
+
+    <div class="controls">
+      <button id="runBtn" class="run-btn">Run</button>
+      <button id="refreshBtn" class="run-btn">Refresh</button>
+    </div>
+
+    <div id="results" class="results-box">
+      <p class="placeholder">Presiona "Run" para ver los resultados...</p>
+    </div>
+  </main>
+
+  <script src="lab_script.js"></script>
+</body>
+</html>
